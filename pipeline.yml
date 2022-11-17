@@ -6,6 +6,7 @@ steps:
     key: required
     steps:
       - command: echo 1
+      - command: sleep 120
 
   - group: Uploads
     steps:
