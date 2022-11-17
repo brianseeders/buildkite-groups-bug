@@ -1,3 +1,4 @@
 steps:
   - label: Step A
     command: echo 1
+    depends_on: required

@@ -1,5 +1,13 @@
+agents:
+  useVault: false
+
 steps:
-  - group:
+  - group: required
+    key: required
+    steps:
+      - command: echo 1
+
+  - group: Uploads
     steps:
       - label: Upload A
         command: buildkite-agent pipeline upload a.yml
