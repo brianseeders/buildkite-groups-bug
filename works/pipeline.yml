@@ -11,8 +11,8 @@ steps:
   - group: Uploads
     steps:
       - label: Upload A
-        command: buildkite-agent pipeline upload a.yml
+        command: buildkite-agent pipeline upload works/a.yml
       - label: Upload B
-        command: buildkite-agent pipeline upload b.yml
+        command: buildkite-agent pipeline upload works/b.yml
       - label: Upload C
-        command: buildkite-agent pipeline upload c.yml
+        command: buildkite-agent pipeline upload works/c.yml
