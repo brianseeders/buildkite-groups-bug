@@ -6,7 +6,7 @@ steps:
     key: required
     steps:
       - command: echo 1
-      - command: sleep 120
+      - command: sleep 45
 
   - group: Uploads
     steps:
@@ -16,3 +16,5 @@ steps:
         command: buildkite-agent pipeline upload b.yml
       - label: Upload C
         command: buildkite-agent pipeline upload c.yml
+      - label: Upload D
+        command: buildkite-agent pipeline upload d.yml
