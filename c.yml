@@ -1,3 +1,4 @@
 steps:
-  - label: Step C - no deps
+  - label: Step C
     command: echo 1
+    depends_on: required
