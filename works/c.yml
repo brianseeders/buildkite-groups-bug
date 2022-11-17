@@ -1,0 +1,3 @@
+steps:
+  - label: Step C
+    command: echo 1

@@ -1,0 +1,18 @@
+agents:
+  useVault: false
+
+steps:
+  - group: required
+    key: required
+    steps:
+      - command: echo 1
+      - command: sleep 120
+
+  - group: Uploads
+    steps:
+      - label: Upload A
+        command: buildkite-agent pipeline upload a.yml
+      - label: Upload B
+        command: buildkite-agent pipeline upload b.yml
+      - label: Upload C
+        command: buildkite-agent pipeline upload c.yml
