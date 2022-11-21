@@ -1,3 +1,4 @@
+dag: true
 agents:
   useVault: false
 
